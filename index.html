@@ -1,0 +1,42 @@
+<!--
+<button id="btnA">Button A</button>
+-->
+
+<!--
+<button id="btn1">Button 1</button>
+<span id="span1">This is Div 1.</span>
+-->
+
+
+<button id="btn2">Button 2</button>
+<ul id="list1">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+
+<script>
+
+function clickedButtonTwo() {
+	var items = document.querySelectorAll("#list1 li");
+  //console.log(items[1].innerHTML);
+  //console.log(items.length);
+  for ( var i=0; i<items.length ; i++ ) {
+  	items[i].innerHTML = parseInt(items[i].innerHTML) * 2;
+  }
+}
+var btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", clickedButtonTwo);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
